@@ -2,11 +2,16 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+// @ts-ignore
+import KboneUI from 'kbone-ui'
+import 'kbone-ui/lib/weui/weui.css'
 
 export default function createApp () {
   const container = document.createElement('div')
   container.id = 'app'
   document.body.appendChild(container)
+
+  Vue.use(KboneUI)
 
   Vue.config.productionTip = false
 

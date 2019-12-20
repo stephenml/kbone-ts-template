@@ -29,6 +29,7 @@
     "@vue/eslint-config-typescript": "^4.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "kbone-ui": "^0.5.2",
     "lint-staged": "^9.4.3",
     "miniprogram-api-typings": "^2.9.3",
     "node-sass": "^4.12.0",

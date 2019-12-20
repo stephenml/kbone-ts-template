@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="text">Hello World</div>
-    <button class="login-button" @click="login">Login</button>
+    <KButton type="primary" @click="login">Login</KButton>
   </div>
 </template>
 
@@ -36,12 +36,6 @@ export default class Home extends Vue {
     font-size: 26px;
     margin-top: 200px;
     margin-bottom: 20px;
-  }
-
-  .login-button {
-    border: 2px solid #07C160;
-    border-radius: 5px;
-    padding: 10px 20px;
   }
 }
 </style>
