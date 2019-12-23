@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <div class="text">Hello World</div>
-    <KButton type="primary" @click="login">Login</KButton>
+    <KButton type="primary">Hello binnie</KButton>
   </div>
 </template>
 
@@ -12,16 +11,25 @@ import { Component, Provide, Vue } from 'vue-property-decorator'
   name: 'Home'
 })
 export default class Home extends Vue {
-  login () {
+  get isAdmin () {
+    return this.$store.state.isAdmin
+  }
+  set isAdmin (val: Boolean) {
+    this.$store.commit('setIsAdmin', val)
+  }
+
+  created () {
     // 调用云函数
     wx.cloud.callFunction({
-      name: 'login',
+      name: 'checkadmin',
       data: {},
       success: (result: any) => {
-        console.log('[云函数] [login] user openid: ', result.result.openid)
+        console.log('[云函数] [checkadmin] result: ', result)
+        this.isAdmin = result['result']
       },
       fail: (error: any) => {
-        console.error('[云函数] [login] 调用失败', error)
+        console.error('[云函数] [checkadmin] result 调用失败', error)
+        this.isAdmin = false
       }
     })
   }
@@ -31,11 +39,6 @@ export default class Home extends Vue {
 <style lang="scss">
 .home {
   text-align: center;
-
-  .text {
-    font-size: 26px;
-    margin-top: 200px;
-    margin-bottom: 20px;
-  }
+  padding-top: 200px;
 }
 </style>
