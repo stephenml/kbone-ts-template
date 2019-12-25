@@ -7,8 +7,7 @@ module.exports = {
     accessDenied: 'app'
   },
   generate: {
-    // app: 'noemit',
-    app: 'default',
+    app: 'noconfig',
     appWxss: 'default',
     autoBuildNpm: 'yarn'
   },
@@ -38,8 +37,7 @@ module.exports = {
   },
   projectConfig: {
     appid: 'wxc862cf3c3ef5c3ae',
-    projectname: 'binnie',
-    libVersion: '2.9.4'
+    projectname: 'binnie'
   },
   packageConfig: {
     name: 'binnie'
