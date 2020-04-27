@@ -37,10 +37,10 @@ module.exports = {
   },
   projectConfig: {
     appid: 'wxc862cf3c3ef5c3ae',
-    projectname: 'binnie'
+    projectname: 'kbone-ts-template'
   },
   packageConfig: {
-    name: 'binnie'
+    name: 'kbone-ts-template'
   },
   // vue-cli 相关配置
   vue: {

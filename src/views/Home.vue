@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div>Hello binnie</div>
+    <div>Hello Kbone</div>
     <KButton type="primary" v-if="isAdmin" @click="openAdmin">打开后台</KButton>
   </div>
 </template>
