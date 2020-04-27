@@ -2,9 +2,11 @@
 
 ### 使用的工具和库
 
->[@vue/cli   v4.1.1](https://cli.vuejs.org/)
-[vue-cli-plugin-kbone   0.4.14](https://www.npmjs.com/package/vue-cli-plugin-kbone)
-[kbone-ui   0.5.8](https://www.npmjs.com/package/kbone-ui)
+> [@vue/cli v4.1.1](https://cli.vuejs.org/)
+
+> [vue-cli-plugin-kbone latest](https://www.npmjs.com/package/vue-cli-plugin-kbone)
+
+> [kbone-ui latest](https://www.npmjs.com/package/kbone-ui)
 
 ### 创建项目
 
@@ -207,7 +209,7 @@ module.exports = {
       <img src="https://static.h5open.com/github/wechat.jpg" alt="WeChat"/>
     </td>
     <td align="center" width="300px">
-      <img src="https://static.h5open.com/github/alipay.jpg" alt="WeChat"/>
+      <img src="https://static.h5open.com/github/alipay.jpg" alt="AliPay"/>
     </td>
   </tr>
 </table>
