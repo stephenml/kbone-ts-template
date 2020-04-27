@@ -197,7 +197,17 @@ module.exports = {
 
 ### 如果用着不错，『打赏』一下哟
 
-|WeChat|AliPay|
-|:-:|:-:|
-|![WeChat](https://static.h5open.com/github/wechat.jpg)|![AliPay](https://static.h5open.com/github/alipay.jpg)|
-
+<table>
+  <tr>
+    <td align="center" width="300px">WeChat</td>
+    <td align="center" width="300px">AliPay</td>
+  </tr>
+  <tr>
+    <td align="center" width="300px">
+      <img src="https://static.h5open.com/github/wechat.jpg" alt="WeChat"/>
+    </td>
+    <td align="center" width="300px">
+      <img src="https://static.h5open.com/github/alipay.jpg" alt="WeChat"/>
+    </td>
+  </tr>
+</table>
